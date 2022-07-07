@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
 :root {
   --main-blue: #5091F3;
+  --dark-blue: #174a97;
   --main-white: #F9FDFF;
 }
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', monospace;
+}
+
 
 nav, #nav-title, #nav-links {
   display: flex;
@@ -9,10 +20,11 @@ nav, #nav-title, #nav-links {
 }
 
 nav {
-  justify-content: space-evenly;
-}
-
-#nav-title, #nav-links {
+  justify-content: left;
+  padding: 1rem 5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.75);
+  clip-path: inset(0px 0px -15px 0px);
+} #nav-title, #nav-links {
   justify-content: center;
 }
 
@@ -20,6 +32,9 @@ nav {
 #nav-title-image {
   height: 2rem;
   width: 2rem;
+} #nav-title-text {
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 
